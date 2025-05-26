@@ -1,0 +1,167 @@
+:root {
+  --bg: #1e1e1e;
+  --primary: #d4d4d4;
+  --accent: #004d40;
+  --control: #3c3c3c;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+}
+
+.header {
+  height: 30px;
+  display: flex;
+  background-color: var(--control);
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar {
+  height: 35px;
+  display: block;
+  align-items: center;
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: 0 10px;
+}
+
+.navbar-title {
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  margin-right: auto;
+}
+
+.navbar-inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  border-radius: 15px;
+  padding: 0 15px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.upload-label:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.upload-input {
+  display: none;
+}
+
+.link-input {
+  border: none;
+  border-radius: 15px;
+  padding: 0 10px;
+  height: 25px;
+  width: 200px;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: inline;
+  background-color: var(--bg);
+  padding: 10px;
+}
+
+img {
+  max-width: 95%;
+  height: 70vh;
+  object-fit: cover;
+  border: 10px solid white;
+}
+
+.mode {
+  background-color: var(--control);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+span {
+  display: inline-block;
+  padding-right: 10px;
+  min-width: 100px;
+  font-weight: 100;
+}
+
+input[type="range"] {
+  width: 150px;
+  margin-right: 20px;
+  accent-color: var(--accent);
+}
+
+.blur {
+  padding-top: 10px;
+}
+
+.placeholder {
+  width: 95%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--control);
+  border: 10px solid white;
+  color: var(--primary);
+  margin: auto;
+}
+
+.placeholder-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.download-btn {
+  border: 2px solid var(--primary);
+  border-radius: 15px;
+  padding: 0 15px;
+  height: 30px;
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.download-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.download-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
