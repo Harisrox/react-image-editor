@@ -2,18 +2,16 @@
 
 A simple web-based image editor with filters and adjustments.
 
-![Screenshot](./public/screenshot.png)
-
 ## Features
 
 - Brightness/Contrast adjustment
-- Image upload or URL input
+- Image upload and URL input
 - Download edited images
 - Dark mode UI
 
 ## Try It
 
-[Live Demo](https://harisrox.github.io/image-editor)
+[Live Demo](https://haris-react-image-editor.netlify.app/)
 
 ## Run Locally
 
