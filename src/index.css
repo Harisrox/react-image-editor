@@ -165,3 +165,73 @@ input[type="range"] {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-inputs {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .upload-label,
+  .link-input,
+  .download-btn {
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    height: 50vh;
+    border-width: 5px;
+  }
+
+  .mode {
+    padding: 15px 10px;
+  }
+
+  .options {
+    padding: 0 10px;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  span {
+    min-width: 80px;
+    font-size: 0.9rem;
+  }
+
+  .placeholder {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mode {
+    flex-direction: column;
+  }
+
+  span {
+    display: block;
+    padding: 5px 0;
+    min-width: auto;
+  }
+
+  input[type="range"] {
+    margin-bottom: 15px;
+  }
+}

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navbar } from "./navbar";
 import { Announcement } from "./announcement";
 import { Placeholder } from "./placeholder";
-import { downloadImage } from "./download";
 
 const App = () => {
   const [imageUrl, setImageUrl] = useState(null);
@@ -15,6 +14,15 @@ const App = () => {
     } else {
       setImageUrl(null);
     }
+  };
+
+  const downloadImage = () => {
+    if (!imageUrl) return;
+
+    const link = document.createElement("a");
+    link.download = "edited-image.png";
+    link.href = imageUrl;
+    link.click();
   };
 
   const [brightness, setBrightness] = useState({
