@@ -3,10 +3,19 @@ import { Navbar } from "./navbar";
 import { Announcement } from "./announcement";
 import { Placeholder } from "./placeholder";
 import { downloadImage } from "./download";
-import { handleUpload } from "./upload";
 
 const App = () => {
   const [imageUrl, setImageUrl] = useState(null);
+
+  const handleUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const url = URL.createObjectURL(file);
+      setImageUrl(url);
+    } else {
+      setImageUrl(null);
+    }
+  };
 
   const [brightness, setBrightness] = useState({
     name: "Brightness",

@@ -1,4 +1,4 @@
-export const downloadImage = () => {
+export const downloadImage = (imageUrl) => {
   if (!imageUrl) return;
 
   const link = document.createElement("a");
